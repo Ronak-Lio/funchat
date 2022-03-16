@@ -9,9 +9,9 @@ const requireLogin = require('../middleware/requireLogin')
 const {JWT_SECRET} = require('../config/keys')
 
 
-router.get('/' , (req, res) => {
-    res.send('Hello')
-});
+// router.get('/' , (req, res) => {
+//     res.send('Hello')
+// });
 
 
 
