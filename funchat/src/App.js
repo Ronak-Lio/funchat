@@ -44,14 +44,14 @@ const Routing = () => {
       <Route exact path="/chat/:collectionName">
         <Chat/>
       </Route>
-      <Route path="/login">
+      <Route exact path="/login">
         <Login />
       </Route>
-      <Route path="/signup">
+      <Route exact path="/signup">
         <Signup/>
       </Route>
-      <Route exact path="/">
-         <Login />
+      <Route path="/">
+        {state ?<Chat/> : <Login/>}
       </Route>
       </>
   )
