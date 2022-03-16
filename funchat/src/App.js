@@ -50,7 +50,7 @@ const Routing = () => {
       <Route exact path="/signup">
         <Signup/>
       </Route>
-      <Route path="/">
+      <Route exact path="/">
         {state ?<Chat/> : <Login/>}
       </Route>
       </>
